@@ -1,0 +1,45 @@
+<h1>Cardápio</h1>
+
+<% for (var i in obj) { var c = obj[i]; %>
+    <% if (i === "format") { continue; } %>
+
+    <h2><%= i %></h2>
+
+    <% for (var j in c) { var item = c[j]; %>
+
+        <div class="liCardapio <%= item.esgotado ? 'esgotado' : '' %>">
+            <% if (item.thumbnail) { %>
+                <img src="<%= item.thumbnail%>" class="left"/>
+            <% } %>
+
+            <div class="right">
+                <span class="preco"><%= format.preco(item.preco) %></span>
+
+                <% if (item.esgotado) { %>
+                    <span class="esgotado">Esgotado</span>
+                <% } %>
+            </div>
+
+            <h3><%= item.nome %></h3>
+
+            <% if (item.descricao) { %>
+                <div class="descricao"><%= item.descricao %></div>
+            <% } %>
+
+            <% if (item.origem) { %>
+                <div class="origem">Origem: <%= item.origem %></div>
+            <% } %>
+
+            <% if (item.opcoes) { %>
+                <div class="opcoes">
+                    Opções: 
+                    <% for (var k in item.opcoes) { var o = item.opcoes[k]; %>
+                        <span><%= o %></span>
+                    <% } %>
+                </div>
+            <% } %>
+        </div>
+
+    <% } %>
+
+<% } %>

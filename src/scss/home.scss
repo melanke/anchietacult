@@ -1,0 +1,60 @@
+@import "default.scss";
+@import "gallery.scss";
+
+#espaco {
+	float: right;
+	width: 400px;
+	border: 1px solid $cinza;
+	border-radius: 5px;
+	background: $cinzaClaro;
+	padding: 10px;
+	margin-bottom: 20px;
+	margin-top: 55px;
+
+	@media #{$onlyPhone} {
+        width: 100%;
+        margin-top: 0;
+    }
+
+	h1 {
+		margin: 0;
+	}
+
+	address {
+		margin: 10px 0;
+	}
+
+	#recomendacoes {
+	    margin-top: 5px;
+		padding: 10px;
+
+		h2 {
+			margin: 0 0 10px 0;
+		}
+
+		.item {
+			margin-bottom: 10px;
+
+			img {
+				@include circular(80px);
+				float: left;
+				margin-right: 10px;
+			}
+		}
+	}
+}
+
+.gallery {
+
+	@media #{$onlyDesktop} {
+		width: 730px;
+	}
+
+	@media #{$onlyTablet} {
+		width: 400px;
+	}
+
+	@media #{$onlyPhone} {
+        width: 100%;
+    }
+}

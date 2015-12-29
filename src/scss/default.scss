@@ -1,0 +1,304 @@
+/** COLORS **/
+
+$cor: #ff4e00;
+$cinza: #D7DADB;
+$cinzaClaro: #EAEAEA;
+$cinzaEscuro: #333333;
+$pretotransparente: rgba(0, 0, 0, 0.6);
+
+/** FONTS **/
+
+$regularFont: "BrandonRegular";
+$boldFont: "BrandonBold";
+$titleFont: "BrandonBlack";
+$specialFont: "Homestead";
+
+/** DIMENS **/
+
+$hugeMargin: 30px;
+$largeMargin: 20px;
+$regularMargin: 15px;
+$smallMargin: 10px;
+$tinyMargin: 5px;
+$nanoMargin: 3px;
+$hairLine: 1px;
+
+$giantText: 30px;
+$hugeText: 28px;
+$big2Text: 24px;
+$bigText: 18px;
+$regularText: 17px;
+$smallText: 15px;
+$tinyText: 13px;
+$minText: 9px;
+$sombraHeight: 12px;
+
+$wDesktop: 1080px;
+$wTablet: 760px;
+$wPhone: 320px;
+
+/** SHORTCUTS **/
+
+$onlyDesktop: "screen and (min-width : " + $wDesktop + ")";
+$onlyTablet: "screen and (min-width: " + $wTablet + ") and (max-width: " + $wDesktop+ ")";
+$onlyPhone: "screen and (max-width : " + $wTablet + ")";
+$desktopAndTablet: "screen and (min-width: " + $wTablet + ")";
+$tabletAndPhone: "screen and (max-width : " + $wDesktop + ")";
+
+/** MIXINS **/
+
+@mixin circular($size) {
+    width: $size;
+    height: $size;
+    border-radius: $size / 2;
+    -webkit-border-radius: $size / 2;
+    -moz-border-radius: $size / 2;
+    background: no-repeat;
+    background-size: cover;
+}
+
+/** TAGS **/
+
+* {
+    box-sizing: border-box;
+    font-family: $regularFont, sans-serif;
+}
+
+html, body, #body {
+    height: 100%;
+    overflow-x: hidden;
+    font-size: $regularText;
+    color: $cinzaEscuro;
+}
+
+body{
+    display: none; //enquanto carrega
+    margin: 0;
+    background: $cor;
+}
+
+a {
+    text-decoration: underline;
+    cursor: pointer;
+    color: $cor;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+b {
+    font-family: $boldFont;
+    font-weight: normal;
+}
+
+h1, h2, h3 {
+    font-family: $titleFont;
+}
+
+hr {
+    margin: 0;
+    border: 0;
+    height: 1px;
+    background: $cinza;
+}
+
+input {
+    outline: none;
+}
+
+/* CLASSES */
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear{
+    clear: both;
+}
+
+.wrapper {
+    width: $wDesktop;
+    margin: 0 auto;
+
+    @media #{$onlyTablet} {
+        width: $wTablet;
+    }
+
+    @media #{$onlyPhone} {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+.popup {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: $pretotransparente;
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+    
+    .window {
+        width: 600px;
+        margin: auto;
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        max-height: 100%;
+        overflow: scroll;
+        padding: $largeMargin;
+        background: white;
+
+        @media #{$onlyPhone} {
+            width: 100%;
+            margin: 5px;
+        }
+    }
+}
+
+.close {
+    float: right;
+    font-size: 34px;
+    text-decoration: none;
+    margin-top: -20px;
+    color: $cor;
+    &:after {
+        content: "×"
+    }
+}
+
+/** IDS **/
+
+$headerHeight: 230px;
+$navHeight: 102px;
+$footerHeight: 100px;
+$phoneFooterHeight: 160px;
+
+#header {
+    height: $headerHeight;
+}
+
+#logo-holder {
+    margin-left: -218px;
+    left: 50%;
+    position: relative;
+    z-index: 1;
+    height: 0;
+
+    img {
+        height: 258px;
+    }
+}
+
+#nav {
+    height: $navHeight + 50px;
+    margin: -25px 0;
+    background: url(../imgs/nav.png) center center;
+    position: relative; //só para ficar acima do header que está relative tb por causa do backstretch
+    
+    .wrapper {
+        height: 100%;
+        line-height: $navHeight + 50px;
+        display: flex;
+        justify-content: space-between;
+
+        @media #{$onlyPhone} {
+            padding: 0 5px;
+        }
+
+        a {
+            font-family: $specialFont;
+            text-decoration: none;
+            font-size: $giantText;
+            height: 0; //para o link ficar só no texto
+            color: $cinzaEscuro;
+
+            @media #{$onlyPhone} {
+                font-size: $regularText;
+            }
+
+            &:hover, &.ativo {
+                color: $cor;
+            }
+        }
+    }
+}
+
+#main {
+    height: auto;
+    min-height: -webkit-calc(100% - #{$headerHeight + $navHeight + $footerHeight});  /* para Chrome */
+    min-height: -moz-calc(100% - #{$headerHeight + $navHeight + $footerHeight});     /* para Firefox */
+    min-height: calc(100% - #{$headerHeight + $navHeight + $footerHeight});
+    
+    @extend .wrapper;
+    background: white;
+    padding: 20px;
+
+    @media #{$onlyPhone} {
+        width: 95%;
+        margin: 0 auto;
+
+        min-height: -webkit-calc(100% - #{$headerHeight + $navHeight + $phoneFooterHeight});  /* para Chrome */
+        min-height: -moz-calc(100% - #{$headerHeight + $navHeight + $phoneFooterHeight});     /* para Firefox */
+        min-height: calc(100% - #{$headerHeight + $navHeight + $phoneFooterHeight});
+    }
+
+    #content {
+    }
+}
+
+#footer {
+    height: $footerHeight;
+    background: $cinzaEscuro;
+    color: $cinzaClaro;
+
+    -webkit-box-shadow: inset 0px 5px 10px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: inset 0px 5px 10px 0px rgba(0,0,0,0.5);
+    box-shadow: inset 0px 5px 10px 0px rgba(0,0,0,0.5);
+
+    @media #{$onlyPhone} {
+        height: $phoneFooterHeight;
+    }
+
+    .wrapper {
+        padding: 10px;
+
+        #col1 {
+            float: left;
+            width: 230px;
+
+            h1 {
+                color: $cor;
+                margin: 0;
+            } 
+
+            p {
+                margin-top: 0;
+            }
+        }
+
+        #col2 {
+            float: left;
+            width: 330px;
+            padding-top: 10px;
+        }
+
+        #col3 {
+            float: left;
+            padding-top: 10px;
+            width: 500px;
+
+            @media #{$tabletAndPhone} {
+                display: none;
+            }
+        }
+    }
+}

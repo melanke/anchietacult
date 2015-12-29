@@ -1,0 +1,215 @@
+{
+	"Queijos": [{
+			"nome": "Minas",
+			"preco": 18.7
+		}, {
+			"nome": "Minas ½ porção",
+			"preco": 11.5
+		}, {
+			"nome": "Brie",
+			"preco": 25
+		}, {
+			"nome": "Mussarela",
+			"preco": 23
+		}, {
+			"nome": "Gorgonzola",
+			"preco": 25
+		}, {
+			"nome": "Mista 1",
+			"preco": 29.9,
+			"descricao": "Minas e bla bla bla"
+		}, {
+			"nome": "Mista 2",
+			"preco": 35,
+			"descricao": "Lorem Ipsum Whiscas Sachê"
+		}],
+	"Porções Quentes": [{
+			"nome": "Creme de legumes",
+			"preco": 17.5
+		}, {
+			"nome": "Bacalhau ao forno",
+			"preco": 52
+		}, {
+			"nome": "Isca Maminha ao molho sugo",
+			"preco": 52
+		}, {
+			"nome": "Língua ao molho madeira",
+			"preco": 52
+		}, {
+			"nome": "Moela ao molho sugo",
+			"preco": 49
+		}],
+	"Outras Porções": [{
+			"nome": "Amendoim/milho defumado",
+			"preco": 5.5
+		}, {
+			"nome": "Azeitona",
+			"preco": 6.9
+		}, {
+			"nome": "Salaminho",
+			"preco": 20.6
+		}],
+	"Cervejas": [{
+			"nome": "Three Lions: Session Ale",
+			"preco": 20
+		}, {
+			"nome": "Irish, APA, IPA",
+			"preco": 22
+		}, {
+			"nome": "Schornstein (Pilsen)",
+			"preco": 0,
+			"esgotado": true
+		}, {
+			"nome": "Schornstein (IPA)",
+			"preco": 0,
+			"esgotado": true
+		}, {
+			"nome": "Estrela Galícia (Lager)",
+			"preco": 9.8
+		}, {
+			"nome": "Hopfen (Lager) ",
+			"preco": 28
+		}, {
+			"nome": "Wensky Bier(Viena Lager)",
+			"preco": 25
+		}, {
+			"nome": "Poção dos Gnomos(IPA)",
+			"preco": 0,
+			"esgotado": true
+		}, {
+			"nome": "Way (IPA) (1/2)",
+			"preco": 15.5
+		}, {
+			"nome": "Dama (Lager)",
+			"preco": 0,
+			"esgotado": true
+		}, {
+			"nome": "Dama (IPA)",
+			"preco": 0,
+			"esgotado": true
+		}, {
+			"nome": "Mula (IPA)",
+			"preco": 28
+		}, {
+			"nome": "Y-iara (Pilsen)",
+			"preco": 27.5
+		}, {
+			"nome": "Kurupira (Ale)",
+			"preco": 27.5
+		}, {
+			"nome": "Domina (Weiss)",
+			"preco": 28
+		}, {
+			"nome": "Pé Vermeio (Blondine)",
+			"preco": 28
+		}, {
+			"nome": "Leffe (Bélgica)(1/2)",
+			"preco": 18.5
+		}, {
+			"nome": "Colorado: Índica, Cauim, Demoiselle",
+			"preco": 28
+		}, {
+			"nome": "Pluris",
+			"preco": 27.5
+		}, {
+			"nome": "Heilige",
+			"preco": 23
+		}, {
+			"nome": "Patrícia (Uruguai)",
+			"preco": 20
+		}, {
+			"nome": "Nortenha (Uruguai)",
+			"preco": 19.5
+		}, {
+			"nome": "Bohemia Caá-yari (1/2)",
+			"preco": 12
+		}],
+	"Vinhos": [{
+			"nome": "JP Chenet",
+			"preco": 0,
+			"origem": "França",
+			"esgotado": true,
+			"opcoes": ["Cabernet-Syrah"]
+		}, {
+			"nome": "Sta Helena Siglo de Oro",
+			"preco": 49,
+			"origem": "Chile",
+			"opcoes": ["Cabernet Sauvignon", "Merlot"]
+		}, {
+			"nome": "Casillero del Diablo",
+			"preco": 58,
+			"origem": "Chile",
+			"opcoes": ["Cabernet Sauvignon", "Merlot"]
+		}, {
+			"nome": "Trio  - Concha y Toro ",
+			"preco": 0,
+			"origem": "Chile",
+			"esgotado": true,
+			"opcoes": ["Cabernet-Merlot-Sirah"]
+		}, {
+			"nome": "Los Vascos",
+			"preco": 0,
+			"origem": "Chile",
+			"esgotado": true,
+			"opcoes": ["Cabernet"]
+		}, {
+			"nome": "Concha y Toro",
+			"preco": 38.7,
+			"origem": "Chile"
+		}, {
+			"nome": "Sta Helena",
+			"preco": 34.9,
+			"origem": "Chile",
+			"opcoes": ["Cabernet-sauvignon", "Merlot", "Cabernet-Merlot"]
+		}, {
+			"nome": "Woodbridge",
+			"preco": 68.30,
+			"origem": "EUA - California",
+			"opcoes": ["cabernet", "zanfandel", "pinot noir"]
+		}, {
+			"nome": "Los Cardos",
+			"preco": 63.50,
+			"origem": "Argentina",
+			"opcoes": ["Malbec"]
+		}, {
+			"nome": "Trapiche",
+			"preco": 54.50,
+			"origem": "Argentina",
+			"opcoes": ["Malbec"]
+		}, {
+			"nome": "Alfredo Roca",
+			"preco": 0,
+			"origem": "Argentina",
+			"esgotado": true,
+			"opcoes": ["Malbec"]
+		}, {
+			"nome": "Cortelo",
+			"preco": 0,
+			"origem": "Portugal",
+			"esgotado": true
+		}],
+	"Outras Bebidas": [{
+			"nome": "Café",
+			"preco": 3
+		}, {
+			"nome": "Capuccino peq",
+			"preco": 4
+		}, {
+			"nome": "Água mineral",
+			"preco": 3
+		}, {
+			"nome": "Coca cola",
+			"preco": 4.50
+		}, {
+			"nome": "Tônica Schweppes",
+			"preco": 4.50
+		}, {
+			"nome": "Suco lata",
+			"preco": 5.50,
+			"opcoes": ["maracujá", "pêssego", "uva"]
+		}, {
+			"nome": "Suco polpa",
+			"preco": 7.90,
+			"opcoes": ["morango", "graviola", "abacaxi-hortelã"]
+		}]
+}

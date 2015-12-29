@@ -1,0 +1,36 @@
+@import "default.scss";
+
+h2 {
+	margin-left: 20px;
+}
+
+.liCardapio {
+	margin-left: 40px;
+	margin-bottom: 5px;
+	padding: 5px;
+	background: #eee;
+	border: 1px solid #ddd;
+
+	&.esgotado {
+		background: white;
+		border-color: #eee;
+		color: #ddd;
+	}
+
+	h3 {
+		margin: 0;
+	}
+
+	.opcoes span {
+		background: #ccc;
+		margin-right: 5px;
+		padding: 0 3px;
+		color: black;
+		border-radius: 3px;
+	}
+
+	&.esgotado .opcoes span {
+		background: #eee;
+		color: #ccc;
+	}
+}

@@ -1,0 +1,28 @@
+@import "default.scss";
+@import "datatables.scss";
+
+$tableheader-list: "ID" "Titulo" "Autor" "Atores" "Categoria";
+@import "responsive-table.scss";
+
+tbody tr {
+	cursor: pointer;
+	&:hover {
+		background: #eee !important;
+	}
+
+	td:nth-of-type(2) {
+		text-decoration: underline;
+	}
+}
+
+.popup img {
+	width: auto;
+	max-width: 100%;
+	display: block;
+}
+
+#semimagem {
+	background: #eee;
+	margin-bottom: 10px;
+	padding: 10px;
+}

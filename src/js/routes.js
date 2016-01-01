@@ -4,7 +4,7 @@
     
     var path = url.parse(location.href).path;
     
-    if (!path.length || path.endsWith(URL.home)) {
+    if (!path.length || path.endsWith(URL.home) || path === "/") {
         require("./controller/home")();
     } else if (path.endsWith(URL.filmes)) {
         require("./controller/filmes")();

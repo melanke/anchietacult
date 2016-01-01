@@ -2,16 +2,16 @@
 
 <% for (var i in data) { var e = data[i]; %>
 
-	<% if (new Date(e.end_time) < new Date()) { continue; } %>
+	<% if (new Date(e.start_time) < new Date()) { continue; } %>
 
 	<h2><%= e.name %></h2>
 
 	<img src="<%= e.cover.source %>"/><br/>
 
-	<b><%= moment(e.start_time).format("DD/MM/YY HH:mm") %> - <%= moment(e.end_time).format("DD/MM/YY HH:mm") %></b>
+	<b><%= moment(e.start_time).format("DD/MM/YY HH:mm") %></b>
 
 	<div class="descricao">
-		<%= e.description ? e.description.replace("\n", "<br/>") : "" %>
+		<%= e.description ? e.description.replace(/\n/gi, "<br/>") : "" %>
 	</div>
 
 <% } %>

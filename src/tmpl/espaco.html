@@ -1,29 +1,33 @@
 <div id="espaco">
-    <h1 itemprop="name">Anchieta Cult</h1>
-    <span>Locadora - Bar - Café</span>
-    <address>
-        <span>Av. Anchieta, 1518 - São José dos Campos</span><br/>
-        <span itemprop="telephone"><a href="tel:+551239438998">(12) 3943-8998</a></span>
-    </address>
-    <span>
-        Um novo conceito em lazer e
-cultura. Um recanto com filmes
-raros, música diferenciada,
-quitutes leves e cineclube.
-    </span>
+    <a id="facebook">Acompanhe-nos no facebook <span>/AnchietaCult</span></a>
 
-    <div id="recomendacoes">
-        <h2>Recomendações</h2>
-        
-        <% for (var i in reviews) { var r = reviews[i]; %>
-            <div class="item">
-                <img src="<%= r.photo %>"/>
-                <b><%= r.author %></b>
-                "<%= r.text %>"
-                <div class="clear"></div>
-            </div>
-        <% } %>
+    <div class="quadro">
+        <h1 itemprop="name">Anchieta Cult</h1>
+        <span>Locadora - Bar - Café</span>
+        <address>
+            <span>Av. Anchieta, 1518 - São José dos Campos</span><br/>
+            <span itemprop="telephone"><a href="tel:+551239438998">(12) 3943-8998</a></span>
+        </address>
+        <span>
+            Um novo conceito em lazer e
+    cultura. Um recanto com filmes
+    raros, música diferenciada,
+    quitutes leves e cineclube.
+        </span>
 
+        <div id="recomendacoes">
+            <h2>Recomendações</h2>
+            
+            <% for (var i in reviews) { var r = reviews[i]; %>
+                <div class="item">
+                    <img src="<%= r.photo %>"/>
+                    <b><%= r.author %></b>
+                    "<%= r.text %>"
+                    <div class="clear"></div>
+                </div>
+            <% } %>
+
+        </div>
     </div>
 </div>
 

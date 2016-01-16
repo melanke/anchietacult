@@ -151,7 +151,7 @@
 		}, {
 			"nome": "Concha y Toro",
 			"preco": 44.7,
-			"origem": "Chile"
+			"origem": "Chile",
 			"opcoes": ["Carmenère","Cabernet-sauvignon","Merlot", "Cabernet-Merlot"]
 		}, {
 			"nome": "Sta Helena",

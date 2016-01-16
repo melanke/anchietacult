@@ -17,11 +17,11 @@
 		}, {
 			"nome": "Mista 1",
 			"preco": 29.9,
-			"descricao": "Minas e bla bla bla"
+			"descricao": "Mussarela em cubos, salame em rodelas, azeitonas verdes e pimenta biquinho, ao azeite"
 		}, {
 			"nome": "Mista 2",
 			"preco": 35,
-			"descricao": "Lorem Ipsum Whiscas Sachê"
+			"descricao": "Um corte de Gorgonzola e outro de Brie acompanhados de uma pera em fatias finas"
 		}],
 	"Porções Quentes": [{
 			"nome": "Creme de legumes",

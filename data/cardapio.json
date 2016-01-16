@@ -40,10 +40,10 @@
 			"preco": 49
 		}],
 	"Outras Porções": [{
-			"nome": "Amendoim/milho defumado",
+			"nome": "Amendoim /ou milho defumado",
 			"preco": 5.5
 		}, {
-			"nome": "Azeitona",
+			"nome": "Azeitonas",
 			"preco": 6.9
 		}, {
 			"nome": "Salaminho",
@@ -92,16 +92,19 @@
 			"preco": 28
 		}, {
 			"nome": "Y-iara (Pilsen)",
-			"preco": 27.5
+			"preco": 27.5,
+			"esgotado": true
 		}, {
 			"nome": "Kurupira (Ale)",
-			"preco": 27.5
+			"preco": 27.5,
+			"esgotado": true
 		}, {
 			"nome": "Domina (Weiss)",
 			"preco": 28
 		}, {
 			"nome": "Pé Vermeio (Blondine)",
-			"preco": 28
+			"preco": 28,
+			"esgotado": true
 		}, {
 			"nome": "Leffe (Bélgica)(1/2)",
 			"preco": 18.5
@@ -109,20 +112,20 @@
 			"nome": "Colorado: Índica, Cauim, Demoiselle",
 			"preco": 28
 		}, {
-			"nome": "Pluris",
+			"nome": "Heilige: Pluris",
 			"preco": 27.5
 		}, {
 			"nome": "Heilige",
-			"preco": 23
+			"preco": 23,
+			"esgotado": true
 		}, {
 			"nome": "Patrícia (Uruguai)",
-			"preco": 20
+			"preco": 20,
+			"esgotado": true
 		}, {
 			"nome": "Nortenha (Uruguai)",
 			"preco": 19.5
-		}, {
-			"nome": "Bohemia Caá-yari (1/2)",
-			"preco": 12
+		
 		}],
 	"Vinhos": [{
 			"nome": "JP Chenet",

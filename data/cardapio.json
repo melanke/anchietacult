@@ -53,7 +53,7 @@
 			"nome": "Three Lions: Session Ale",
 			"preco": 20
 		}, {
-			"nome": "Irish, APA, IPA",
+			"nome": "Three Lions: Irish, APA, IPA",
 			"preco": 22
 		}, {
 			"nome": "Schornstein (Pilsen)",
@@ -70,15 +70,9 @@
 			"nome": "Hopfen (Lager) ",
 			"preco": 28
 		}, {
-			"nome": "Wensky Bier(Viena Lager)",
-			"preco": 25
-		}, {
-			"nome": "Poção dos Gnomos(IPA)",
+		 	"nome": "Poção dos Gnomos(IPA)",
 			"preco": 0,
 			"esgotado": true
-		}, {
-			"nome": "Way (IPA) (1/2)",
-			"preco": 15.5
 		}, {
 			"nome": "Dama (Lager)",
 			"preco": 0,
@@ -109,15 +103,12 @@
 			"nome": "Leffe (Bélgica)(1/2)",
 			"preco": 18.5
 		}, {
-			"nome": "Colorado: Índica, Cauim, Demoiselle",
-			"preco": 28
+			"nome": "Colorado",
+			"preco": 28,
+			"opcoes": ["Índica", "Cauim", "Demoiselle"] 
 		}, {
 			"nome": "Heilige: Pluris",
 			"preco": 27.5
-		}, {
-			"nome": "Heilige",
-			"preco": 23,
-			"esgotado": true
 		}, {
 			"nome": "Patrícia (Uruguai)",
 			"preco": 20,

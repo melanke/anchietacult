@@ -28,7 +28,8 @@
 			"preco": 17.5
 		}, {
 			"nome": "Bacalhau ao forno",
-			"preco": 52
+			"preco": 52,
+			"thumbnail": "http://i.imgur.com/HfkMDZus.jpg"
 		}, {
 			"nome": "Isca Maminha ao molho sugo",
 			"preco": 52

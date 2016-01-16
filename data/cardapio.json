@@ -53,8 +53,9 @@
 			"nome": "Three Lions: Session Ale",
 			"preco": 20
 		}, {
-			"nome": "Three Lions: Irish, APA, IPA",
-			"preco": 22
+			"nome": "Three Lions",
+			"preco": 22,
+			"opcoes":["Irish","APA","IPA"]
 		}, {
 			"nome": "Schornstein (Pilsen)",
 			"preco": 0,

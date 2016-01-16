@@ -152,16 +152,17 @@
 			"nome": "Concha y Toro",
 			"preco": 44.7,
 			"origem": "Chile"
+			"opcoes": ["Carmenère","Cabernet-sauvignon","Merlot", "Cabernet-Merlot"]
 		}, {
 			"nome": "Sta Helena",
 			"preco": 44,
 			"origem": "Chile",
-			"opcoes": ["Cabernet-sauvignon", "Merlot", "Cabernet-Merlot"]
+			"opcoes": ["Carmenère","Cabernet-sauvignon","Cabernet-blanc","Chardonay", "Merlot", "Cabernet-Merlot"]
 		}, {
 			"nome": "Woodbridge",
 			"preco": 78.30,
 			"origem": "EUA - California",
-			"opcoes": ["cabernet", "zanfandel", "pinot noir"]
+			"opcoes": ["Zinfandel", "Pinot noir"]
 		}, {
 			"nome": "Los Cardos",
 			"preco": 63.50,
@@ -172,7 +173,7 @@
 			"nome": "Trapiche",
 			"preco": 54.50,
 			"origem": "Argentina",
-			"opcoes": ["Malbec"]
+			"opcoes": ["Malbec", "Pinot noir"]
 		}, {
 			"nome": "Alfredo Roca",
 			"preco": 0,

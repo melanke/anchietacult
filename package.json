@@ -16,6 +16,7 @@
     "uglify": "latest"
   },
   "dependencies": {
+    "datatables": "^1.10.9",
     "fotorama": "^4.6.4",
     "jquery": "^2.1.4",
     "jquery.backstretch": "^2.1.1",

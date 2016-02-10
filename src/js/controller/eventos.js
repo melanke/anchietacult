@@ -47,6 +47,23 @@
 
 		var renderConteudo = function(conteudo)
 		{
+			var eventosNovos = [];
+
+			for (var i in data) { 
+				var e = data[i];
+
+				if (new Date(e.start_time) >= new Date()) {
+					eventosNovos.push(e);
+				}
+			}
+
+			if (eventosNovos.length) {
+				conteudo.data = eventosNovos;
+				conteudo.titulo = "Próximos Eventos";
+			} else {
+				conteudo.titulo = "Os eventos que foram um Sucesso!"
+			}
+
 			conteudo.moment = moment;
 			$("#content").html(eventosTpl(conteudo));
 		};

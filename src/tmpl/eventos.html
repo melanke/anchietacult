@@ -1,8 +1,6 @@
-<h1>Eventos</h1>
+<h1><% titulo %></h1>
 
 <% for (var i in data) { var e = data[i]; %>
-
-	<% if (new Date(e.start_time) < new Date()) { continue; } %>
 
 	<h2><%= e.name %></h2>
 

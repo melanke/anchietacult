@@ -49,8 +49,8 @@
 		{
 			var eventosNovos = [];
 
-			for (var i in data) { 
-				var e = data[i];
+			for (var i in conteudo.data) { 
+				var e = conteudo.data[i];
 
 				if (new Date(e.start_time) >= new Date()) {
 					eventosNovos.push(e);

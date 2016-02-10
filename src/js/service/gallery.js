@@ -41,8 +41,8 @@
                 // create slide object
                 item = {
                     src: linkEl.getAttribute('href'),
-                    w: theImage.width * 10,
-                    h: 1//theImage.height * 10
+                    // w: theImage.width * 10,
+                    // h: theImage.height * 10
                 };
 
 

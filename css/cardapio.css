@@ -212,5 +212,8 @@ h2 {
   .liCardapio.esgotado .opcoes span {
     background: #eee;
     color: #ccc; }
+  .liCardapio img {
+    float: left;
+    margin-right: 10px; }
 
 /*# sourceMappingURL=cardapio.css.map */

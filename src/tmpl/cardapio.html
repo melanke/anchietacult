@@ -9,7 +9,7 @@
 
         <div class="liCardapio <%= item.esgotado ? 'esgotado' : '' %>">
             <% if (item.thumbnail) { %>
-                <img src="<%= item.thumbnail%>" class="left"/>
+                <img src="<%= item.thumbnail%>"/>
             <% } %>
 
             <div class="right">
@@ -38,6 +38,7 @@
                     <% } %>
                 </div>
             <% } %>
+            <div class="clear"></div>
         </div>
 
     <% } %>

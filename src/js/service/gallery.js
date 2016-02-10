@@ -36,13 +36,13 @@
 
                 // Create new offscreen image to test
                 var theImage = new Image();
-                theImage.src = imgEl.getAttribute('src');
+                theImage.src = linkEl.getAttribute('href');
 
                 // create slide object
                 item = {
-                    src: linkEl.getAttribute('href'),
-                    // w: theImage.width * 10,
-                    // h: theImage.height * 10
+                    src: theImage.src,
+                    w: theImage.width,
+                    h: theImage.height
                 };
 
 

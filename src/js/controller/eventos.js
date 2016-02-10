@@ -59,7 +59,7 @@
 
 			if (eventosNovos.length) {
 				conteudo.data = eventosNovos;
-				conteudo.titulo = "Próximos Eventos";
+				conteudo.titulo = "Pr&oacute;ximos Eventos";
 			} else {
 				conteudo.titulo = "Os eventos que foram um Sucesso!"
 			}

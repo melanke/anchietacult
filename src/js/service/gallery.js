@@ -42,7 +42,8 @@
                 item = {
                     src: linkEl.getAttribute('href'),
                     w: theImage.width * 10,
-                    h: theImage.height * 10
+                    h: theImage.height * 10,
+                    fitRatio: 1
                 };
 
 

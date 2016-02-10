@@ -59,13 +59,13 @@
 
 			if (eventosNovos.length) {
 				conteudo.data = eventosNovos;
-				conteudo.titulo = "Pr&oacute;ximos Eventos";
+				$("#content h1").html("Próximos Eventos");
 			} else {
-				conteudo.titulo = "Os eventos que foram um Sucesso!"
+				$("#content h1").html("Os eventos que foram um Sucesso!");
 			}
 
 			conteudo.moment = moment;
-			$("#content").html(eventosTpl(conteudo));
+			$("#eventos").html(eventosTpl(conteudo));
 		};
 
 		init();
